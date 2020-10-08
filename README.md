@@ -13,11 +13,22 @@ Look no further, if you want to get familiar with the JWA Platform, you've come 
 
 ## Getting started
 
+clone this repository and cd into the directory
+
+```
+git clone git@github.com:jwa-lab/minilab.git
+cd minilab
+```
+
 ```
 ./run start
 ```
 
-That's it!
+The import alice and bob canned users:
+
+```
+./run bootstrap
+```
 
 ## Tools and services
 
