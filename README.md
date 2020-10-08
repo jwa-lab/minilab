@@ -24,7 +24,7 @@ cd minilab
 ./run start
 ```
 
-The import alice and bob canned users:
+Then import the alice and bob accounts:
 
 ```
 ./run bootstrap
