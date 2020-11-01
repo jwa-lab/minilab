@@ -3,6 +3,7 @@
 set -euo pipefail
 
 function start() {
+    platform rm -f
     platform up
 }
 
