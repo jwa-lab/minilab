@@ -32,7 +32,7 @@ Then import the alice and bob accounts:
 
 ## Tools and services
 
-1. Carthagebox
+1. Flextesa
 2. Nats.io
 3. tzindex
 4. tzstats

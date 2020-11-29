@@ -39,7 +39,7 @@ function carthagebox() {
 # =======
 
 function _get-box-name() {
-    docker ps --filter "name=carthagebox" --format "{{.Names}}"
+    docker ps --filter "name=tezos-dev-box" --format "{{.Names}}"
 }
 
 function _import-default-accounts() {
