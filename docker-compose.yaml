@@ -13,6 +13,14 @@ services:
             - "4222:4222"
             - "6222:6222"
             - "8222:8222"
+    airlock:
+        image: jwalab/airlock:latest
+        ports:
+            - "50051:50051"
+        environment:
+            - NATS_URL=nats://nats:4222
+        depends_on: 
+            - nats
     tzindex:
         image: blockwatch/tzindex
         # https://github.com/blockwatch-cc/tzindex/issues/13
