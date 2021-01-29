@@ -11,6 +11,22 @@ To make things even easier, `minilab` offers a complete environment to be used e
 
 Look no further, if you want to get familiar with the JWA Platform, you've come to the right place.
 
+## Consume
+
+```
+npm install -i @jwalab/minilab
+```
+
+```
+minilab start
+```
+
+To exclude a specific service:
+
+```
+minilab start --exclude airlock
+```
+
 ## Getting started
 
 clone this repository and cd into the directory
@@ -36,3 +52,4 @@ Then import the alice and bob accounts:
 2. Nats.io
 3. tzindex
 4. tzstats
+5. Airlock
