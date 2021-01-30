@@ -9,7 +9,7 @@ module.exports = {
             chalk`${ gradient.pastel(figlet.textSync('minilab', { 
                 font: 'DOS Rebel'
               })) }
-                                                 ${ package.author } - v${ package.version }
+                                                 ${ package.author.name } - v${ package.version }
 `
           );
     }

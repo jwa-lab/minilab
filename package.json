@@ -1,6 +1,6 @@
 {
   "name": "@jwalab/minilab",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Minilab is a mini development environment for the JWA Platform",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,10 @@
     "NATS",
     "tezos"
   ],
-  "author": "JWA Lab",
+  "author": {
+    "name": "JWA Lab",
+    "url": "https://github.com/jwa-lab"
+  },
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/jwa-lab/minilab/issues"

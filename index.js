@@ -18,7 +18,6 @@ program
     .description('minilab start a JWA Platform development environment')
     .version(package.version)
     .name('minilab')
-    .option('-b, --no-banner', 'remove minilab banner')
     .usage("[global options] command");
 
 program
