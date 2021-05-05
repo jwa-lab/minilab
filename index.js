@@ -38,7 +38,7 @@ program
   .command("pull")
   .description("download the latest versions of the minilab environment")
   .action(() => {
-    compose.upAll({ cwd: path.join(__dirname), log: true }).then(
+    compose.pullAll({ cwd: path.join(__dirname), log: true }).then(
       () => {
         console.log("minilab started");
       },
