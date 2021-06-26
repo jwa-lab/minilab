@@ -7,6 +7,10 @@ function start() {
     platform up
 }
 
+function stop() {
+    platform down
+}
+
 function bootstrap() {
     _import-default-accounts
     tezos-client list known contracts
@@ -16,7 +20,6 @@ function platform() {
     docker-compose -f docker-compose.yaml "${@:1}"
 }
 
-
 function tezos-client() {
     docker exec -it \
         -e 'TEZOS_CLIENT_UNSAFE_DISABLE_DISCLAIMER=yes' \
@@ -25,27 +28,24 @@ function tezos-client() {
         "${@:1}"
 }
 
-
-function carthagebox() {
+function tzbox() {
     docker exec -it \
         $(_get-box-name) \
-        carthagebox \
+        tzbox \
         "${@:1}"
 }
-
 
 # =======
 # private
 # =======
 
 function _get-box-name() {
-    docker ps --filter "name=carthagebox" --format "{{.Names}}"
+    docker ps --filter "name=tzbox" --format "{{.Names}}"
 }
 
 function _import-default-accounts() {
     tezos-client import secret key alice unencrypted:edsk3QoqBuvdamxouPhin7swCvkQNgq4jP5KZPbwWNnwdZpSpJiEbq --force
     tezos-client import secret key bob unencrypted:edsk3RFfvaFaxbHx8BMtEW1rKQcPtDML3LXjNqMNLCzC3wLC1bWbAt --force
 }
-
 
 "$@"
