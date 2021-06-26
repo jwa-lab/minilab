@@ -29,7 +29,7 @@ program
         console.log("minilab started");
       },
       (err) => {
-        console.log("something went wrong:", err.message);
+        console.error("something went wrong:", err.message);
       }
     );
   });
@@ -40,10 +40,10 @@ program
   .action(() => {
     compose.pullAll({ cwd: path.join(__dirname), log: true }).then(
       () => {
-        console.log("minilab started");
+        console.log("minilab updated");
       },
       (err) => {
-        console.log("something went wrong:", err.message);
+        console.error("something went wrong:", err.message);
       }
     );
   });
@@ -57,7 +57,7 @@ program
         console.log("minilab stopped");
       },
       (err) => {
-        console.log("something went wrong:", err.message);
+        console.error("something went wrong:", err.message);
       }
     );
   });

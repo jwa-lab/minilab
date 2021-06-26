@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  carthagebox:
-    image: tqtezos/flextesa:20200925
-    command: ["carthagebox", "start"]
+  tzbox:
+    image: tqtezos/flextesa:20210602
+    command: ["flobox", "start"]
     ports:
       - "20000:20000"
   nats:
@@ -37,7 +37,7 @@ services:
     ports:
       - "8002:8002"
     environment:
-      - TZ_RPC_HOST=carthagebox
+      - TZ_RPC_HOST=tzbox
       - TZ_RPC_PORT=20000
       - TZ_SERVER_ADDR=0.0.0.0
       - TZ_SERVER_PORT=8002
@@ -46,7 +46,7 @@ services:
       - TZ_SNAPSHOT_PATH=/data/snapshots
     restart: always
     depends_on:
-      - carthagebox
+      - tzbox
   tzstats:
     image: blockwatch/tzstats
     ports:
