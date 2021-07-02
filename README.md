@@ -53,3 +53,4 @@ Then import the alice and bob accounts:
 3. tzindex
 4. tzstats
 5. Airlock
+6. Airlock dev authorization service
