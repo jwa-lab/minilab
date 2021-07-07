@@ -6,6 +6,8 @@ services:
     command: ["flobox", "start"]
     ports:
       - "20000:20000"
+    environment:
+      - block_time=2
   nats:
     image: nats:latest
     command: []
