@@ -1,5 +1,9 @@
 # Minilab changelog
 
+## 0.0.11
+
+- Upgrade airlock to 0.0.8
+
 ## 0.0.10
 
 - Upgrade to Granada protocol
