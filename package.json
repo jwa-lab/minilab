@@ -1,6 +1,6 @@
 {
   "name": "@jwalab/minilab",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Minilab is a mini development environment for the JWA Platform",
   "main": "index.js",
   "scripts": {
