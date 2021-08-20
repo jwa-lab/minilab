@@ -1,5 +1,9 @@
 # Minilab changelog
 
+## 0.0.13
+
+- Upgrade authorization-service to 0.0.4
+
 ## 0.0.12
 
 - Upgrade authorization-service to 0.0.3
