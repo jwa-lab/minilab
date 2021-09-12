@@ -1,5 +1,9 @@
 # Minilab changelog
 
+## 0.0.14
+
+- Upgrade tzIndex to fix indexing issue
+
 ## 0.0.13
 
 - Upgrade authorization-service to 0.0.4
