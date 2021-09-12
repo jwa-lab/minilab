@@ -35,11 +35,12 @@ services:
       - nats
       - authorization-service
   tzindex:
-    image: blockwatch/tzindex
+    image: blockwatch/tzindex:v9.1-rc2
     # https://github.com/blockwatch-cc/tzindex/issues/13
     command: ["sh", "-c", "sleep 10 && tzindex run"]
     ports:
       - "8002:8002"
+    user: root
     environment:
       - TZ_RPC_HOST=tzbox
       - TZ_RPC_PORT=20000
