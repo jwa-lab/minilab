@@ -1,5 +1,9 @@
 # Minilab changelog
 
+## 0.0.15
+
+- Enable NATS JetStream
+
 ## 0.0.14
 
 - Upgrade tzIndex to fix indexing issue

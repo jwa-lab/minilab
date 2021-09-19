@@ -10,7 +10,7 @@ services:
       - block_time=2
   nats:
     image: nats:latest
-    command: []
+    command: ["-js"]
     ports:
       - "4222:4222"
       - "6222:6222"
