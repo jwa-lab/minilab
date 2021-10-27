@@ -1,5 +1,9 @@
 # Minilab changelog
 
+## 0.0.16
+
+- Airlock updated to 0.1.0
+
 ## 0.0.15
 
 - Enable NATS JetStream
