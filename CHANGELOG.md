@@ -1,5 +1,9 @@
 # Minilab changelog
 
+## 0.0.18
+
+- Upgrade airlock to 0.1.2 with a new error management.
+
 ## 0.0.17
 
 - Upgrade authorization-service to 0.0.5
