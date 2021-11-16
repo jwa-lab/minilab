@@ -1,5 +1,9 @@
 # Minilab changelog
 
+## 0.0.19
+
+- Upgrade airlock to 0.1.3 updated errors.
+
 ## 0.0.18
 
 - Upgrade airlock to 0.1.2 with a new error management.
